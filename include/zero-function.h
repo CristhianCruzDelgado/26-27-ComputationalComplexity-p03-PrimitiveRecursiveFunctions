@@ -18,7 +18,7 @@ class ZeroFunction : public PrimitiveRecursiveFunction {
  public:
   ZeroFunction();
 
- protected:
+ private:
   unsigned compute(const std::vector<unsigned>&) const override;
 };
 

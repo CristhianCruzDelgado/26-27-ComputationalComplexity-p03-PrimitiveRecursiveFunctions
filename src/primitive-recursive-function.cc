@@ -16,5 +16,6 @@ unsigned PrimitiveRecursiveFunction::evaluate(
         "Wrong number of arguments: expected " + std::to_string(arity_) +
         ", got " + std::to_string(args.size()) + "\n");
   }
+  ++number_of_calls_;
   return compute(args);
 }

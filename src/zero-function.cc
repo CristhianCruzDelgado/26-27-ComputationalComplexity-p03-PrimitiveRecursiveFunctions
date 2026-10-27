@@ -14,5 +14,6 @@ constexpr unsigned kZeroArity = 1;
 ZeroFunction::ZeroFunction() : PrimitiveRecursiveFunction(kZeroArity) {}
 
 unsigned ZeroFunction::compute(const std::vector<unsigned>& args) const {
+  ++number_of_calls_;
   return 0;
 }

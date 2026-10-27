@@ -20,5 +20,7 @@ void PrimitiveRecursiveFunctionsApp::runApp() {
   std::cout << kHorizontalLine
             << "Power(" << x_ << ", " << y_ << ") = "
             << power_function->evaluate({x_, y_}) << "\n"
+            << "Number of calls: "
+            << power_function->getNumberOfCalls() << "\n"
             << kHorizontalLine;
 }

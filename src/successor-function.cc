@@ -18,5 +18,6 @@ unsigned SuccessorFunction::compute(const std::vector<unsigned>& args) const {
   if (args[0] == std::numeric_limits<unsigned>::max()) {
     throw std::overflow_error("Overflow: successor exceeds unsigned range\n");
   }
+  ++number_of_calls_;
   return args[0] + 1;
 }

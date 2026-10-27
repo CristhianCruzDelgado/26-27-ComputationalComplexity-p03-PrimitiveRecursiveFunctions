@@ -19,10 +19,8 @@ class CompositionFunction : public PrimitiveRecursiveFunction {
  public:
   CompositionFunction(PRFSmartPointer, std::vector<PRFSmartPointer>);
 
- protected:
-  unsigned compute(const std::vector<unsigned>&) const override;
-
  private:
+  unsigned compute(const std::vector<unsigned>&) const override;
   unsigned validateArity(
     const PRFSmartPointer&, const std::vector<PRFSmartPointer>&) const;
   PRFSmartPointer f_;

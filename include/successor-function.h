@@ -20,7 +20,7 @@ class SuccessorFunction : public PrimitiveRecursiveFunction {
  public:
   SuccessorFunction();
 
- protected:
+ private:
   unsigned compute(const std::vector<unsigned>&) const override;
 };
 

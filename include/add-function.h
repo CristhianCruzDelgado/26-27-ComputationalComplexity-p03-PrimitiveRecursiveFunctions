@@ -14,16 +14,15 @@
 #include <vector>
 
 #include "composition-function.h"
+#include "primitive-functions.h"
 #include "primitive-recursive-function.h"
-#include "projection-function.h"
 #include "recursive-function.h"
-#include "successor-function.h"
 
 class AddFunction : public PrimitiveRecursiveFunction {
  public:
   AddFunction();
 
- protected:
+ private:
   unsigned compute(const std::vector<unsigned>&) const override;
 };
 

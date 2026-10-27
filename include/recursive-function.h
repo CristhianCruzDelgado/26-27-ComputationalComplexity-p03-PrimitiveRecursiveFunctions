@@ -19,10 +19,8 @@ class RecursiveFunction : public PrimitiveRecursiveFunction {
  public:
   RecursiveFunction(PRFSmartPointer, PRFSmartPointer);
 
- protected:
-  unsigned compute(const std::vector<unsigned>&) const override;
-
  private:
+  unsigned compute(const std::vector<unsigned>&) const override;
   unsigned validateArity(const PRFSmartPointer&, const PRFSmartPointer&);
   PRFSmartPointer g_;
   PRFSmartPointer h_;

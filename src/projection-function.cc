@@ -18,5 +18,6 @@ ProjectionFunction::ProjectionFunction(unsigned index, unsigned arity)
 }
 
 unsigned ProjectionFunction::compute(const std::vector<unsigned>& args) const {
+  ++number_of_calls_;
   return args[index_ - 1];
 }

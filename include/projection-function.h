@@ -19,10 +19,8 @@ class ProjectionFunction : public PrimitiveRecursiveFunction {
  public:
   ProjectionFunction(unsigned, unsigned);
 
- protected:
-  unsigned compute(const std::vector<unsigned>&) const override;
-
  private:
+  unsigned compute(const std::vector<unsigned>&) const override;
   unsigned index_;
 };
 
